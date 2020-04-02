@@ -1,10 +1,10 @@
 <?php
-    function faqwithiconbox( $atts, $content=null ){
+    function faqAccordionBox( $atts, $content=null ){
 
         extract(shortcode_atts( array(
-        'faqinfo'		=> '',
-        'faqtitle'		=> '',
-        'faqcontent' 	=> '',
+            'faqinfo'		=> '',
+            'faqtitle'		=> '',
+            'faqcontent' 	=> '',
         ), $atts ));
 
         $contact_all_data 	= vc_param_group_parse_atts( $atts['faqinfo'] );
@@ -19,8 +19,6 @@
                     $Number = 1;
 
                     foreach ( $contact_all_data as $contact_single_data ) :
-
-
 
                         if( $Number == 1){
                             $activeblock = 'active-block';
@@ -55,4 +53,4 @@
         <?php return ob_get_clean();
     }
 
-    add_shortcode( 'faqwithicon', 'faqwithiconbox' );
+    add_shortcode( 'faqAccordion', 'faqAccordionBox' );

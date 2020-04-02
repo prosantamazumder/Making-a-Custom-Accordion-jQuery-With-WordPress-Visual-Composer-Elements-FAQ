@@ -1,9 +1,9 @@
 (function ($) {
     "use strict";
-    
-    /******************************
-     *  Accordion Box  *
-    ******************************/
+
+    /************************************************
+     *  Accordion Box JS ADD THIS CODE MAIN.JS FIELS  *
+    ***************************************************/
     if($('.accordion-box').length){
         $(".accordion-box").on('click', '.acc-btn', function() {
             
@@ -25,4 +25,5 @@
             }
         }); 
     }
+    
 })(jQuery);
