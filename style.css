@@ -1,0 +1,110 @@
+/***=======================
+    Accordion Style
+=========================***/
+.accordion-box {
+  position: relative;
+  list-style: none;
+}
+
+.accordion-box .block{
+  position: relative;
+  margin-bottom:20px;
+  background-color:#ffffff;
+}
+
+.accordion-box .block.active-block{
+  box-shadow:0px 0px 25px rgba(0,0,0,0.15);
+}
+
+.accordion-box .block .acc-btn{
+  position:relative;
+  font-size:18px;
+  cursor:pointer;
+  line-height:30px;
+  font-family: 'Montserrat', sans-serif;
+  color:#000;
+  font-weight:600;
+  background-color:#f2f3f6;
+  padding:19px 50px 19px 35px;
+  transition:all 500ms ease;
+  -ms-transition:all 500ms ease;
+  -o-transition:all 500ms ease;
+  -moz-transition:all 500ms ease;
+  -webkit-transition:all 500ms ease;
+}
+
+.accordion-box .block .acc-btn.active{
+  background-color:#DE1738;
+  color:#ffffff;
+}
+
+.accordion-box .block .icon-outer{
+  position:absolute;
+  right:20px;
+  top:18px;
+  font-size:20px;
+  color: #262626;
+  transition:all 500ms ease;
+  -moz-transition:all 500ms ease;
+  -webkit-transition:all 500ms ease;
+  -ms-transition:all 500ms ease;
+  -o-transition:all 500ms ease;
+}
+.accordion-box .block .icon-outer .icon{
+  position: absolute;
+  right: 0px;
+  width:30px;
+  height:30px;
+  color:#ffffff;
+  font-size: 14px;
+  text-align: center;
+  line-height:32px;
+  background-color:#000;
+}
+
+.accordion-box .block .icon-outer .fa-plus{
+  opacity:1;
+}
+
+.accordion-box .block .icon-outer .fa-minus{
+  opacity:0;
+}
+
+.accordion-box .block .acc-btn.active .icon-outer .fa-minus{
+  opacity:1;
+}
+
+.accordion-box .block .acc-btn.active .icon-outer .fa-plus{
+  opacity:0;
+}
+
+.accordion-box .block .acc-content{
+  position:relative;
+  display:none;
+}
+
+.accordion-box .block .acc-content .content-text{
+  padding-bottom:6px;
+}
+
+.accordion-box .block .acc-content.current{
+  display:block;  
+}
+
+.accordion-box .block .content{
+  position:relative;
+  font-size:14px;
+  padding:30px 35px 30px 35px;
+}
+
+.accordion-box .block .content .accordian-text{
+  line-height:1.9em;
+  font-size:16px; 
+  color:#84858a;
+  font-weight:600;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.accordion-box .block .content p:last-child{
+  margin-bottom:0px;  
+}
