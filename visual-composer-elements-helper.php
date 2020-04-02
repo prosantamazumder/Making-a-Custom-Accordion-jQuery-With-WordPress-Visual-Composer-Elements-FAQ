@@ -1,4 +1,6 @@
 <?php
+
+    // THIS CODE USE VISUAL COMPOSER HELPER.JS
     function faqAccordionBox( $atts, $content=null ){
 
         extract(shortcode_atts( array(
