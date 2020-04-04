@@ -4,7 +4,7 @@
 [repositories.presstechit-institute.com](http://repositories.presstechit-institute.com/Making-a-Custom-Accordion-jQuery-With-WordPress-Visual-Composer-Elements-FAQ/)
 
 
-### ISOTOP FILTERING HTML Markup 
+###  Accordion HTML Markup 
 
 ```
 <ul class="accordion-box mt-20">
